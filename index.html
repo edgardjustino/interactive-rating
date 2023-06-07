@@ -17,7 +17,8 @@
   <body>
     <div class="container">
       <div class="card card--main">
-        <i class="fa-solid fa-star"></i>
+        <div class="card__icon"><i class="fa-solid fa-star"></i></div>
+
         <h2 class="card__title">How did we do?</h2>
 
         <p class="card__text">
@@ -25,12 +26,12 @@
           is appreciated to help us improve our offering!
         </p>
 
-        <div class="rating">
-          <span class="card__rating__number">1</span>
-          <span class="card__rating__number">2</span>
-          <span class="card__rating__number">3</span>
-          <span class="card__rating__number">4</span>
-          <span class="card__rating__number">5</span>
+        <div class="card__rating">
+          <span class="card__rating-number">1</span>
+          <span class="card__rating-number">2</span>
+          <span class="card__rating-number">3</span>
+          <span class="card__rating-number">4</span>
+          <span class="card__rating-number">5</span>
         </div>
 
         <button class="btn">Submit</button>
@@ -38,12 +39,17 @@
 
       <!--    THANK YOU CARD    -->
 
-      <div class="card card--thank-you">
-        <img src="confetti.png" alt="confetti illustration" srcset="" />
+      <div class="card card--thank-you hide">
+        <img
+          class="card__image"
+          src="confetti.png"
+          alt="confetti illustration"
+          srcset=""
+        />
+
         <div class="card__result">
-          You Selected
-          <!--add rating here-->
-          out of 5
+          You Selected&nbsp <span class="card__result-value">2</span>&nbspout
+          of 5
         </div>
 
         <h2 class="card__title">Thank you!</h2>
